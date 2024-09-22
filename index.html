@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Website</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color:black;
+    color: white;
+}
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+}
+
+.skip-link:focus {
+    position: static;
+    left: 0;
+    top: 0;
+    background-color: #ff0;
+    padding: 10px;
+    z-index: 1000;
+}
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #333;
+    justify-content: center;
+}
+
+.nav-bar li {
+    margin: 0 15px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.nav-bar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+img {
+    width: 100%;
+    border: 5px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+.about-section {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-section img {
+    width: 300px;
+    height: auto;
+}
+.image-gallery img:nth-child(even) {
+    border-radius: 50%;
+}
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <main id="main-content">
+        <h1>Welcome to XG Website</h1>
+        <p>This is the home page where you can find an overview of the site.</p>
+        <section class="image-grid">
+            <img src="https://i0.wp.com/www.poptokki.com/wp-content/uploads/2024/09/xglax-1.jpg?fit=1200%2C628&ssl=1" alt="Sample Image 1">
+        </section>
+        <section class="image-grid">
+            <img src="https://kpopping.com/documents/82/1/850/XG-fullPicture(19).webp?v=1f0eb" alt="Sample Image 1">
+            <img src="https://xg-wokeup.com/image/main_visual.jpg" alt="Sample Image 2">
+            <img src="https://images.squarespace-cdn.com/content/v1/623a2fb8abca543f34ac1c9b/1684943333342-WIAYYJ46NCLAEXI9R3T1/xg-comeback-2023-shooting-star.jpg" alt="Sample Image 2">
+            <img src="https://www.allkpop.com/upload/2022/02/content/202010/1645405800-0221-xg-3-18.jpg" alt="Sample Image 2">
+            <img src="https://dep.com.vn/wp-content/uploads/2024/06/Untitled-design-14.png" alt="Sample Image 2">
+            <img src="https://thebiaslist.com/wp-content/uploads/2023/08/xg-new-dance.jpg" alt="Sample Image 2">
+            <img src="https://rollingstoneindia.com/wp-content/uploads/2023/12/WINTERWITHOUT_XGALX-scaled.jpg" alt="Sample Image 2">
+            <img src="https://www.nme.com/wp-content/uploads/2023/10/xg-new-dna-review.jpg" alt="Sample Image 2">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+</body>
+</html>

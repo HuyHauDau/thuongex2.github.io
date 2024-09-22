@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - My Website</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color:black;
+    color: white;
+}
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    position: static;
+    left: 10px;
+    top: 10px;
+    background-color: #ff0;
+    padding: 10px;
+    z-index: 1000;
+}
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #333;
+    justify-content: center;
+}
+
+.nav-bar li {
+    margin: 0 15px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.nav-bar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+img {
+    width: 100%;
+    border: 5px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+.img-intro{
+    width: 700px;
+    height: 600px;
+}
+.about-section {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-section img {
+    width: 300px;
+    height: auto;
+}
+.image-gallery img:nth-child(even) {
+    border-radius: 50%;
+}
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h1>XG</h1>
+        <img class="img-intro" src="https://img.imageimg.net/artist/xg/img/profile.jpg" alt="">
+        <p>Official Accounts: <a href="https://xgalx.com/en/xg/">xgalx.com</a></p>
+        <p>Twitter: <a href="https://x.com/XGOfficial_">XG OFFICIAL</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/xgofficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">XG OFFICIAL</a></p>
+        <p>YouTube: <a href="youtube.com/channel/UC12HMtO5MYph9dCZZ7yygng">XG</a></p>
+        <p>TikTok: <a href="tiktok.com/@xg.official">XG OFFICIAL</a></p>
+        <p>Facebook: <a href="facebook.com/XGOfficial">XG OFFICIAL</a></p>
+        <p>OFFICIAL FANCLUB "ALPHAZ”: <a href="bit.ly/3ykLo4V">ALPHAZ</a></p>
+        <section class="image-gallery"></section>
+            <h1>MEMBERS</h1>
+            <img src="https://kpopping.com/documents/38/3/250/Chisa-facePicture(14).webp?v=feeeb" alt="Sample Image 1">
+            <img src="https://kpopping.com/documents/e8/2/250/Hinata-facePicture(17).webp?v=feeeb" alt="Sample Image 2">
+            <img src="https://kpopping.com/documents/dc/3/250/Jurin-facePicture(15).webp?v=feeeb" alt="Sample Image 3">
+            <img src="https://kpopping.com/documents/04/2/250/Harvey-facePicture(14).webp?v=feeeb" alt="Sample Image 4">
+            <img src="https://kpopping.com/documents/d3/5/250/Juria-facePicture(10).webp?v=feeeb" alt="Sample Image 5">
+            <img src="https://kpopping.com/documents/09/1/250/Maya-facePicture(19).webp?v=feeeb" alt="Sample Image 6">
+            <img src="https://kpopping.com/documents/90/5/250/Cocona-facePicture(11).webp?v=feeeb" alt="Sample Image 7">
+        </section>
+    </section>
+    <section></section>
+    <main id="main-content">
+        <h1>XG Gallery</h1>
+        <section class="about-section">
+        <img src="https://i.ytimg.com/vi/kd5LJ4r-vEY/maxresdefault.jpg" alt="Music 1">
+        <p><a href="https://youtu.be/kd5LJ4r-vEY?si=Z9Os-0hAKZG2zEDp">Something Ain't Right</a>XG - SOMETHING AIN'T RIGHT (Official Music Video)</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+</body>
+</html>
